@@ -56,3 +56,16 @@ set exrc " Enable project specific vimrc files when placed in root project folde
 " Status Line
 set laststatus=2 " Always display the status line
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+
+" netrw
+let g:netrw_liststyle = 3 " The list style to use
+let g:netrw_browse_split = 4 " Open files in previous window instead of replacing current
+let g:netrw_winsize = 20 " Set the percentage size of newly opened windows
+
+" Folding
+set foldenable " Enable folding
+set foldlevelstart=10 " Open most folds by default, 0 keeps them closed
+set foldnestmax=10 " Max amount of nested folds
+set foldcolumn=0 " Show a column on the left side of the window showing folds and their statuses
+set foldmethod=manual " Manually manage folds
+
