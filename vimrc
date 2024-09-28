@@ -20,8 +20,15 @@ set background=dark " Use colors that work for a dark background
 set title " Show the windows title based on filename
 
 " Swap and Backup Files
-set noswapfile " Disable swapfile
-set nobackup " Disable file backups
+set swapfile " Enable swap files
+set directory=$HOME/.vim/swp// " Set swap file directory
+
+set backup " Enable file backups
+set writebackup " Enable backups when writing
+set backupdir=$HOME/.vim/backup//
+
+set undofile " Enable undo files
+set undodir=$HOME/.vim/undodir// " Set undo file directory
 
 " Indentation
 set autoindent " Enable auto indenting
@@ -69,3 +76,11 @@ set foldnestmax=10 " Max amount of nested folds
 set foldcolumn=0 " Show a column on the left side of the window showing folds and their statuses
 set foldmethod=manual " Manually manage folds
 
+" Plugins
+call plug#begin()
+  Plug 'preservim/nerdtree'
+call plug#end()
+
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
