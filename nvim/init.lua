@@ -1,7 +1,5 @@
 require("config.lazy")
 
---vim.opt.nocompatible = true -- Use Vim settings, rather than Vi settings
-
 -- General Configuration
 vim.opt.backspace = "indent,eol,start" -- Allow backspacing over indents, line breaks, and insertions
 vim.opt.history = 1000 -- Save more lines of history
@@ -57,14 +55,14 @@ vim.cmd("syntax enable") -- Enable syntax highlighting
 -- Miscellaneous
 vim.opt.confirm = true -- Display confirmation when closing unsaved file
 vim.opt.modeline = false -- Ignore file's mode lines and use the vimrc configuration instead
---vim.opt.nrformats -= "octal" -- Interpret octal as decimal when incrementing numbers
+vim.opt.nrformats:remove("octal") -- Interpret octal as decimal when incrementing numbers
 vim.opt.shell = "/bin/bash" -- Set shell used to execute commands
 vim.opt.spell = true -- Enable spell checking in English
 vim.opt.exrc = true -- Enable project specific vimrc files when placed in root project folders
 
 -- Status Line
 vim.opt.laststatus = 2 -- Always display the status line
---vim.opt.statusline = "%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\"
+vim.opt.statusline = "%F%m%r%h%w%=(%{&ff}/%Y) (line %l/%L, col %c)"
 
 -- netrw
 vim.g['netrw_liststyle']  =  3 -- The list style to use
