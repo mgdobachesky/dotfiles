@@ -21,14 +21,14 @@ vim.opt.title = true -- Show the windows title based on filename
 
 -- Swap and Backup Files
 vim.opt.swapfile = true -- Enable swap files
-vim.opt.directory = "/Users/michael.dobachesky/.nvim/swp//" -- Set swap file directory
+vim.opt.directory = os.getenv("HOME") .. "/.nvim/swp//" -- Set swap file directory
 
 vim.opt.backup = true -- Enable file backups
 vim.opt.writebackup = true -- Enable backups when writing
-vim.opt.backupdir = "/Users/michael.dobachesky/.nvim/backup//" -- Set backup file directory
+vim.opt.backupdir = os.getenv("HOME") .. "/.nvim/backup//" -- Set backup file directory
 
 vim.opt.undofile = true -- Enable undo files
-vim.opt.undodir = "/Users/michael.dobachesky/.nvim/undodir//" -- Set undo file directory
+vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir//" -- Set undo file directory
 
 -- Indentation
 vim.opt.autoindent = true -- Enable auto indenting
