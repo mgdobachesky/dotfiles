@@ -1,7 +1,8 @@
 # Neovim
 ## Setup
-Install a [NerdFont](https://www.nerdfonts.com/) (Hurmit)
-`brew install luarocks`
+- Install a [NerdFont](https://www.nerdfonts.com/) (Hurmit)
+
+- `brew install luarocks`
 
 ### Install plugins
-`:Lazy install`
+- `:Lazy install`

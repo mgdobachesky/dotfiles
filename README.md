@@ -1,1 +1,2 @@
 # dotfiles
+Common dotfile configurations
