@@ -11,7 +11,6 @@ vim.opt.hidden = true -- Remember marks and undo history when re-activating back
 -- User Interface
 vim.opt.ruler = true -- Always show cursor position
 vim.opt.wildmenu = true -- Display tab-complete options as a menu
-vim.cmd("colorscheme habamax") -- vim.opt.nice looking colorscheme
 vim.opt.cursorline = true -- Set a line where the cursor currently is
 vim.cmd(":highlight CursorLine guibg = black ctermbg=black")
 vim.opt.number = true -- Enable line numbers
