@@ -1,5 +1,4 @@
 require("config.lazy")
-require("config.autoload")
 
 -- Disable netrw in favor of nvim-tree
 vim.g.loaded_netrw = 1
