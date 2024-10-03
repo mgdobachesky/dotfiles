@@ -1,4 +1,9 @@
 require("config.lazy")
+require("config.autoload")
+
+-- Disable netrw in favor of nvim-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- General Configuration
 vim.opt.backspace = "indent,eol,start" -- Allow backspacing over indents, line breaks, and insertions
@@ -17,6 +22,7 @@ vim.opt.number = true -- Enable line numbers
 vim.opt.relativenumber = true -- Enable relative line numbers
 vim.opt.background = "dark" -- Use colors that work for a dark background
 vim.opt.title = true -- Show the windows title based on filename
+vim.opt.termguicolors = true -- Enable 24-bit colors
 
 -- Swap and Backup Files
 vim.opt.swapfile = true -- Enable swap files
@@ -62,11 +68,6 @@ vim.opt.exrc = true -- Enable project specific vimrc files when placed in root p
 -- Status Line
 vim.opt.laststatus = 2 -- Always display the status line
 vim.opt.statusline = "%F%m%r%h%w%=(%{&ff}/%Y) (line %l/%L, col %c)"
-
--- netrw
-vim.g['netrw_liststyle']  =  3 -- The list style to use
-vim.g['netrw_browse_split']  =  4 -- Open files in previous window instead of replacing current
-vim.g['netrw_winsize']  =  20 -- vim.opt.the percentage size of newly opened windows
 
 -- Folding
 vim.opt.foldenable = true -- Enable folding
