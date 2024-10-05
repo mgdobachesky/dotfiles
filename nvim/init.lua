@@ -1,8 +1,13 @@
-require("config.lazy")
+-- Set leader key
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- Disable netrw in favor of nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+-- Lazy plugins, requires leader key to be set
+require("config.lazy")
 
 -- General Configuration
 vim.opt.backspace = "indent,eol,start" -- Allow backspacing over indents, line breaks, and insertions
