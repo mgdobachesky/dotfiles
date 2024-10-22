@@ -77,7 +77,7 @@ set foldcolumn=0 " Show a column on the left side of the window showing folds an
 set foldmethod=manual " Manually manage folds
 
 " Plugins
-"call plug#begin()
-"  Plug 'preservim/nerdtree'
-"call plug#end()
+call plug#begin()
+  "Plug 'preservim/nerdtree'
+call plug#end()
 
