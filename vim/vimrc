@@ -1,8 +1,8 @@
-set nocompatible " Use Vim settings, rather than Vi settings
-
 " General Configuration
+set nocompatible " Use Vim settings, rather than Vi settings
+let mapleader = "\<Space>" " Map leader key to spacebar
 set backspace=indent,eol,start " Allow backspacing over indents, line breaks, and insertions
-set history=1000 " Save more lines of history
+set history=10000 " Save more lines of history
 set showcmd " Show incomplete commands at the bottom
 set showmode " Show mode at the bottom
 set autoread " Re-read unmodified files
@@ -13,7 +13,6 @@ set ruler " Always show cursor position
 set wildmenu " Display tab-complete options as a menu
 colorscheme habamax " Set nice looking colorscheme
 set cursorline " Set a line where the cursor currently is
-:highlight CursorLine guibg=black ctermbg=black
 set number " Enable line numbers
 set relativenumber " Enable relative line numbers
 set background=dark " Use colors that work for a dark background
@@ -78,6 +77,6 @@ set foldmethod=manual " Manually manage folds
 
 " Plugins
 call plug#begin()
-  "Plug 'preservim/nerdtree'
+  "Plug ''
 call plug#end()
 
