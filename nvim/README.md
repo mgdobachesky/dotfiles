@@ -7,6 +7,3 @@
 - `brew install make`
 - `brew install gcc`
 
-### Install plugins
-- `:Lazy install`
-

@@ -1,74 +1,74 @@
 -- Prerequisite Configuration
-vim.g.mapleader = " " -- Map leader key to space-bar (for lazy.nvim)
-vim.g.maplocalleader = "\\" -- Map local leader key to backslash (for lazy.nvim)
-vim.g.loaded_netrw = 1 -- Disable netrw (for nvim-tree)
-vim.g.loaded_netrwPlugin = 1 -- Disable netrw (for nvim-tree)
+vim.g.mapleader = " " -- Required to map leader key for lazy.nvim
+vim.g.maplocalleader = "\\"
+vim.g.loaded_netrw = 1 -- Required to disable netrw for nvim-tree
+vim.g.loaded_netrwPlugin = 1
 
 -- Plugin Manager
-require("config.lazy") -- Load Lazy plugin manager
+require("config.lazy")
 
 -- General Configuration
-vim.opt.backspace = "indent,eol,start" -- Allow backspacing over indents, line breaks, and insertions
-vim.opt.history = 10000 -- Save more lines of history
-vim.opt.showcmd = true -- Show incomplete commands at the bottom
-vim.opt.showmode = true -- Show mode at the bottom
-vim.opt.autoread = true -- Re-read unmodified files
-vim.opt.hidden = true -- Remember marks and undo history when re-activating background buffer
+vim.opt.backspace = "indent,eol,start"
+vim.opt.history = 10000
+vim.opt.showcmd = true
+vim.opt.showmode = true
+vim.opt.autoread = true
+vim.opt.hidden = true
 
 -- User Interface
-vim.opt.ruler = true -- Always show cursor position
-vim.opt.wildmenu = true -- Display tab-complete options as a menu
-vim.opt.cursorline = true -- Set a line where the cursor currently is
-vim.opt.number = true -- Enable line numbers
-vim.opt.relativenumber = true -- Enable relative line numbers
-vim.opt.background = "dark" -- Use colors that work for a dark background
-vim.opt.title = true -- Show the windows title based on filename
+vim.opt.ruler = true
+vim.opt.wildmenu = true
+vim.opt.cursorline = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.background = "dark"
+vim.opt.title = true
 
 -- Swap, Backup, and Undo Files
-vim.opt.swapfile = true -- Enable swap files
-vim.opt.directory = os.getenv("HOME") .. "/.local/state/nvim/swap//" -- Set swap file directory
+vim.opt.swapfile = true
+vim.opt.directory = os.getenv("HOME") .. "/.local/state/nvim/swap//"
 
-vim.opt.backup = true -- Enable file backups
-vim.opt.writebackup = true -- Enable backups when writing
-vim.opt.backupdir = os.getenv("HOME") .. "/.local/state/nvim/backup//" -- Set backup file directory
+vim.opt.backup = true
+vim.opt.writebackup = true
+vim.opt.backupdir = os.getenv("HOME") .. "/.local/state/nvim/backup//"
 
-vim.opt.undofile = true -- Enable undo files
-vim.opt.undodir = os.getenv("HOME") .. "/.local/state/nvim/undo//" -- Set undo file directory
+vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.local/state/nvim/undo//"
 
 -- Indentation
-vim.opt.autoindent = true -- Enable auto indenting
-vim.cmd("filetype indent on") -- Enable indenting for files
-vim.opt.tabstop = 4 -- Show existing tab with N spaces width
-vim.opt.softtabstop = 2 -- Indent by N spaces when hitting tab
-vim.opt.shiftwidth = 2 -- Indent by N spaces when auto-indenting
-vim.opt.expandtab = true -- Insert 4 spaces when pressing tab
-vim.opt.wrap = false -- Don't wrap lines
+vim.opt.autoindent = true
+vim.cmd("filetype indent on")
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.wrap = false
 
 -- Searching
-vim.opt.incsearch = true -- Find matches as the search is being typed
-vim.opt.hlsearch = true -- Highlight search results
-vim.opt.ignorecase = true -- Ignore case when searching
-vim.opt.smartcase = true -- Ignore case unless a capital is explicitly typed
+vim.opt.incsearch = true
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Text Rendering
-vim.opt.linebreak = true -- Wrap lines at convenient points
-vim.opt.scrolloff = 3 -- Number of lines to keep above and below cursor
-vim.opt.sidescrolloff = 5 -- Number of columns to keep to the left and right of the cursor
-vim.cmd("syntax enable") -- Enable syntax highlighting
+vim.opt.linebreak = true
+vim.opt.scrolloff = 3
+vim.opt.sidescrolloff = 5
+vim.cmd("syntax enable")
 
 -- Miscellaneous
-vim.opt.confirm = true -- Display confirmation when closing unsaved file
-vim.opt.modeline = false -- Ignore file's mode lines and use the vimrc configuration instead
-vim.opt.spell = true -- Enable spell checking in English
+vim.opt.confirm = true
+vim.opt.modeline = false
+vim.opt.spell = true
 
 -- Status Line
-vim.opt.laststatus = 2 -- Always display the status line
+vim.opt.laststatus = 2
 vim.opt.statusline = "%F%m%r%h%w%=(%{&ff}/%Y) (line %l/%L, col %c)"
 
 -- Folding
-vim.opt.foldenable = true -- Enable folding
-vim.opt.foldlevelstart = 10 -- Open most folds by default, 0 keeps them closed
-vim.opt.foldnestmax = 10 -- Max amount of nested folds
-vim.opt.foldcolumn = "0" -- Show a column on the left side of the window showing folds and their statuses
-vim.opt.foldmethod = "manual" -- Manually manage folds
+vim.opt.foldenable = true
+vim.opt.foldlevelstart = 10
+vim.opt.foldnestmax = 10
+vim.opt.foldcolumn = "0"
+vim.opt.foldmethod = "manual"
 
