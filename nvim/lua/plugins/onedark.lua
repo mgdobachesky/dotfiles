@@ -1,8 +1,7 @@
-return { 
-  "navarasu/onedark.nvim", 
-  config = function(_,_) 
-    onedark = require("onedark")
-    onedark.setup({ style = "deep" }) 
-    onedark.load()
+return {
+  "navarasu/onedark.nvim",
+  config = function()
+    require("onedark").setup({ style = "darker" })
+    require("onedark").load()
   end,
 }
