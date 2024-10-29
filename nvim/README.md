@@ -9,3 +9,6 @@
 
 ### Install plugins
 - `:Lazy install`
+
+### Install LSPs
+- `:MasonInstall python-lsp-server typescript-language-server`

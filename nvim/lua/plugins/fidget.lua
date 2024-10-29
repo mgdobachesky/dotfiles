@@ -1,3 +1,4 @@
 return {
-    "j-hui/fidget.nvim"
+  "j-hui/fidget.nvim",
+  tag = "v1.4.5",
 }
