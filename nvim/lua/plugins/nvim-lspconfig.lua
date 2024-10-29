@@ -8,5 +8,6 @@ return {
   config = function()
     require("lspconfig").pylsp.setup {}
     require("lspconfig").ts_ls.setup {}
+    require("lspconfig").lua_ls.setup {}
   end,
 }
