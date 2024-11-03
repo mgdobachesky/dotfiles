@@ -6,4 +6,5 @@
 - `brew install cmake`
 - `brew install make`
 - `brew install gcc`
+- `brew install fd`
 
