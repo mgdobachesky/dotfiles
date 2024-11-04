@@ -35,4 +35,12 @@ return {
       }
     }
   end,
+
+  -- These mappings will be added to nvim lsp by default at some point in the future
+  vim.keymap.set('n', 'grn', vim.lsp.buf.rename);
+  vim.keymap.set({'n', 'v'}, 'gra', vim.lsp.buf.code_action);
+  vim.keymap.set('n', 'grr', vim.lsp.buf.references);
+  vim.keymap.set('n', 'gri', vim.lsp.buf.implementation);
+  vim.keymap.set('n', 'gO', vim.lsp.buf.document_symbol);
+  vim.keymap.set('i', '<C-s>', vim.lsp.buf.signature_help);
 }
