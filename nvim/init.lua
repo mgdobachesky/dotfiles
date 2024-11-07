@@ -1,9 +1,3 @@
--- Prerequisite Configuration
-vim.g.mapleader = " " -- Required to map leader key for lazy.nvim
-vim.g.maplocalleader = "\\"
-vim.g.loaded_netrw = 1 -- Required to disable netrw for nvim-tree
-vim.g.loaded_netrwPlugin = 1
-
 -- Plugin Manager
 require("config.lazy")
 
