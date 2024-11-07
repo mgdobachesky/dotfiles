@@ -11,7 +11,14 @@ return {
 
     vim.opt.termguicolors = true
 
-    require("nvim-tree").setup()
+    require("nvim-tree").setup({
+      view = {
+        width = {
+          min = '10%',
+          max = '20%',
+        }
+      }
+    })
 
     vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = function(data)
       local is_file = vim.fn.filereadable(data.file) == 1
