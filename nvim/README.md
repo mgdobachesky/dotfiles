@@ -1,6 +1,6 @@
 # Neovim
 ## Setup
-- Install a [NerdFont](https://www.nerdfonts.com/) (Hurmit)
+- Install [Hack Nerd Font](https://www.nerdfonts.com/)
 
 - `brew install luarocks`
 - `brew install cmake`

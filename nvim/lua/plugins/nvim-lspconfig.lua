@@ -34,6 +34,8 @@ return {
         Lua = {}
       }
     }
+
+    require("lspconfig").bashls.setup {}
   end,
 
   -- These mappings will be added to nvim lsp by default at some point in the future
