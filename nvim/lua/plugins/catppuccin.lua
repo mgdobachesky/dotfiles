@@ -16,6 +16,7 @@ return {
         gitsigns = true,
         nvimtree = true,
         treesitter = true,
+        notify = true,
         telescope = {
           enabled = true,
         },
@@ -41,6 +42,11 @@ return {
           },
           inlay_hints = {
             background = true,
+          },
+          indent_blankline = {
+            enabled = true,
+            scope_color = "",
+            colored_indent_levels = false,
           },
         },
       }

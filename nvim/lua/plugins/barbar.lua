@@ -9,6 +9,10 @@ return {
     vim.g.barbar_auto_setup = false
   end,
   config = function()
-    require('barbar').setup{}
+    require('barbar').setup {
+      sidebar_filetypes = {
+        NvimTree = true,
+      },
+    }
   end,
 }

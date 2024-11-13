@@ -25,5 +25,9 @@ require("lazy").setup({
     missing = true,
     colorscheme = { "catppuccin", "habamax" },
   },
-  checker = { enabled = true },
+  checker = {
+    enabled = true,
+    notify = true,
+    frequency = 604800,
+  },
 })
