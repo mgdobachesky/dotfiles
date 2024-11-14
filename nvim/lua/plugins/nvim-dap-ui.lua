@@ -6,7 +6,7 @@ return {
     "nvim-neotest/nvim-nio"
   },
   config = function()
-    require("dapui").setup {}
+    require("dapui").setup()
 
     vim.keymap.set("n", "<Leader>dh", "<CMD>lua require('dapui').eval()<CR>", { desc = "" })
     vim.keymap.set("n", "<Leader>du", "<CMD>lua require('dapui').open()<CR>", { desc = "" })

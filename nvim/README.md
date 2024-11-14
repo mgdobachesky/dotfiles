@@ -11,6 +11,3 @@
 - `brew install fd` (Optional for telescope)
 - `brew install ripgrep` (Optional for telescope)
 
-
-### Debug Adapters
-- `:MasonInstall js-debug-adapter debugpy`

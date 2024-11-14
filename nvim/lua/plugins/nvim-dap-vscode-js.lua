@@ -12,7 +12,21 @@ return {
 
     for _, language in ipairs({ "typescript", "javascript", "javascriptreact", "typescriptreact" }) do
       require("dap").configurations[language] = {
-
+        {
+          type = "pwa-node",
+          request = "launch",
+          name = "Launch Workspace With Yarn (pwa-node)",
+          cwd = "${workspaceFolder}",
+          sourceMaps = true,
+          runtimeExecutable = "yarn",
+          runtimeArgs = {
+            "start:dev"
+          },
+          resolveSourceMapLocations = {
+            "${workspaceFolder}/**",
+            "!**/node_modules/**",
+          }
+        },
       }
     end
   end,
