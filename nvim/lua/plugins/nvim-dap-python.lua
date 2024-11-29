@@ -25,7 +25,7 @@ return {
       mode = "remote",
       pathMappings = {
         {
-          localRoot = vim.fn.getcwd(),
+          localRoot = "${workspaceFolder}",
           remoteRoot = "/usr/src/app",
         },
       },
