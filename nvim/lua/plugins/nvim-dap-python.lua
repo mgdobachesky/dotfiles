@@ -7,7 +7,7 @@ return {
   config = function()
     require('dap-python').setup(vim.fn.stdpath("data") .. '/mason/packages/debugpy/venv/bin/python3')
 
-    -- Add script to start debugpy server/adapter in docker container
+    -- Script to start debugpy server/adapter in docker container
     -- vim.fn.system({"${script}", ${script_args}})
 
     local host = "0.0.0.0"

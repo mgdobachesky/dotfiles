@@ -13,5 +13,6 @@ return {
     vim.keymap.set("n", "<Leader>di", "<CMD>lua require('dap').step_into()<CR>")
     vim.keymap.set("n", "<Leader>do", "<CMD>lua require('dap').step_out()<CR>")
     vim.keymap.set("n", "<Leader>dt", "<CMD>lua require('dap').terminate()<CR>")
+    vim.keymap.set("n", "<Leader>dC", "<CMD>lua require('dap').clear_breakpoints()<CR>")
   end,
 }
