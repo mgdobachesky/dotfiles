@@ -7,12 +7,14 @@ return {
 
   },
   config = function()
-    vim.keymap.set("n", "<Leader>dc", "<CMD>lua require('dap').continue()<CR>")
-    vim.keymap.set("n", "<Leader>db", "<CMD>lua require('dap').toggle_breakpoint()<CR>")
-    vim.keymap.set("n", "<Leader>dn", "<CMD>lua require('dap').step_over()<CR>")
-    vim.keymap.set("n", "<Leader>di", "<CMD>lua require('dap').step_into()<CR>")
-    vim.keymap.set("n", "<Leader>do", "<CMD>lua require('dap').step_out()<CR>")
-    vim.keymap.set("n", "<Leader>dt", "<CMD>lua require('dap').terminate()<CR>")
-    vim.keymap.set("n", "<Leader>dC", "<CMD>lua require('dap').clear_breakpoints()<CR>")
+    local dap = require("dap")
+
+    vim.keymap.set("n", "<Leader>dc", dap.continue)
+    vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint)
+    vim.keymap.set("n", "<Leader>dn", dap.step_over)
+    vim.keymap.set("n", "<Leader>di", dap.step_into)
+    vim.keymap.set("n", "<Leader>do", dap.step_out)
+    vim.keymap.set("n", "<Leader>dt", dap.terminate)
+    vim.keymap.set("n", "<Leader>dC", dap.clear_breakpoints)
   end,
 }

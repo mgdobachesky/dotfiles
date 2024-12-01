@@ -6,9 +6,20 @@ return {
     "nvim-neotest/nvim-nio"
   },
   config = function()
-    require("dapui").setup()
+    local dapui = require("dapui")
+    local dap = require("dap")
 
-    vim.keymap.set("n", "<Leader>ds", "<CMD>lua require('dapui').open()<CR>")
-    vim.keymap.set("n", "<Leader>dc", "<CMD>lua require('dapui').close()<CR>")
+    dapui.setup()
+
+    vim.keymap.set("n", "<Leader>ds", function()
+      dap.continue()
+      dapui.open()
+    end)
+
+    vim.keymap.set("n", "<Leader>de", function()
+      dap.clear_breakpoints()
+      dapui.close()
+      dap.terminate()
+    end)
   end,
 }
