@@ -3,11 +3,16 @@
 ### Font
 - Install [Hack Nerd Font](https://www.nerdfonts.com/) (Optional for lazy)
 
-### Local Packages
-- `brew install luarocks` (Required for lazy)
-- `brew install cmake` (Required for telescope-fzf-native)
-- `brew install make ` (Required for telescope-fzf-native)
-- `brew install gcc` (Required for telescope-fzf-native)
-- `brew install fd` (Optional for telescope)
-- `brew install ripgrep` (Optional for telescope)
+### Local Package Dependencies
+#### lazy (required)
+- `brew install luarocks` (required)
+
+#### telescope (required)
+- `brew install fd` (optional)
+- `brew install ripgrep` (optional)
+
+#### telescope-fzf-native (optional for telescope)
+- `brew install cmake` (required)
+- `brew install make ` (required)
+- `brew install gcc` (required)
 
