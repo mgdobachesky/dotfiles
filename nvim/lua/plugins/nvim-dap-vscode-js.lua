@@ -25,7 +25,8 @@ return {
           resolveSourceMapLocations = {
             "${workspaceFolder}/**",
             "!**/node_modules/**",
-          }
+          },
+          console = "integratedTerminal",
         },
       }
     end
