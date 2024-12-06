@@ -15,5 +15,5 @@
 - `brew install cmake` (required)
 - `brew install make ` (required)
 - `brew install gcc` (required)
-- Then run `:Lazy`, select `telescope-fzf-native`, and press `gb` to build
+- `:Lazy build telescope-fzf-native.nvim`
 
