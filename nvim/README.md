@@ -1,7 +1,7 @@
 # Neovim
 ## Setup
 ### Font
-- Install [Hack Nerd Font](https://www.nerdfonts.com/) (Optional for lazy)
+- Install [Hack Nerd Font](https://www.nerdfonts.com/) (required)
 
 ### Local Package Dependencies
 #### lazy (required)
@@ -10,10 +10,7 @@
 #### telescope (required)
 - `brew install fd` (optional)
 - `brew install ripgrep` (optional)
-
-#### telescope-fzf-native (optional for telescope)
-- `brew install cmake` (required)
-- `brew install make ` (required)
-- `brew install gcc` (required)
-- `:Lazy build telescope-fzf-native.nvim`
+- `telescope-fzf-native` (optional)
+    - `brew install cmake make gcc`
+    - `:Lazy build telescope-fzf-native.nvim`
 
