@@ -10,11 +10,14 @@ return {
         dark = "mocha",
       },
       integrations = {
+        aerial = true,
+        alpha = true,
         mason = true,
         barbar = true,
         gitsigns = true,
         nvimtree = true,
         treesitter = true,
+        notify = true,
         telescope = {
           enabled = true,
         },
