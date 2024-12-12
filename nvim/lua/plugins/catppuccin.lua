@@ -12,6 +12,7 @@ return {
       integrations = {
         aerial = true,
         alpha = true,
+        cmp = true,
         diffview = true,
         mason = true,
         barbar = true,
