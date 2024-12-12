@@ -20,6 +20,7 @@ return {
         nvimtree = true,
         treesitter = true,
         notify = true,
+        ufo = true,
         telescope = {
           enabled = true,
         },

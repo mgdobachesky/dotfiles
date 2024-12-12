@@ -28,13 +28,6 @@ vim.opt.smartcase = true
 vim.opt.scrolloff = 3
 vim.opt.sidescrolloff = 5
 
--- Folding
-vim.opt.foldenable = true
-vim.opt.foldlevelstart = 10
-vim.opt.foldnestmax = 10
-vim.opt.foldcolumn = "0"
-vim.opt.foldmethod = "manual"
-
 -- Miscellaneous
 vim.opt.confirm = true
 vim.opt.modeline = false
