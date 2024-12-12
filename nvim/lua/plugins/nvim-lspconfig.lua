@@ -3,13 +3,21 @@ return {
   dependencies = {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
+    "hrsh7th/nvim-cmp",
   },
   config = function()
-    require("lspconfig").pylsp.setup {}
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    require("lspconfig").ts_ls.setup {}
+    require("lspconfig").pylsp.setup {
+      capabilities = capabilities,
+    }
+
+    require("lspconfig").ts_ls.setup {
+      capabilities = capabilities,
+    }
 
     require("lspconfig").lua_ls.setup {
+      capabilities = capabilities,
       on_init = function(client)
         if client.workspace_folders then
           local path = client.workspace_folders[1].name
@@ -35,7 +43,9 @@ return {
       }
     }
 
-    require("lspconfig").bashls.setup {}
+    require("lspconfig").bashls.setup {
+      capabilities = capabilities,
+    }
   end,
 
   vim.keymap.set('n', 'grn', vim.lsp.buf.rename);
