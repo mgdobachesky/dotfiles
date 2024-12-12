@@ -10,6 +10,15 @@ return {
 
     require("lspconfig").pylsp.setup {
       capabilities = capabilities,
+      settings = {
+        pylsp = {
+          plugins = {
+            pycodestyle = {
+              maxLineLength = 120
+            }
+          },
+        },
+      },
     }
 
     require("lspconfig").ts_ls.setup {
