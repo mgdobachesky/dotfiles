@@ -6,7 +6,7 @@ return {
       relculright = true,
       segments = {
         {
-          text = { builtin.foldfunc },
+          text = { builtin.foldfunc, " " },
           click = "v:lua.ScFa"
         },
         {
