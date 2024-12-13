@@ -10,6 +10,10 @@ return {
           click = "v:lua.ScFa"
         },
         {
+          sign = { name = { ".*" }, maxwidth = 2, auto = true },
+          click = "v:lua.ScSa"
+        },
+        {
           text = { builtin.lnumfunc, " " },
           click = "v:lua.ScLa",
         },
