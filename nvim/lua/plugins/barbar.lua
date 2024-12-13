@@ -14,5 +14,10 @@ return {
         NvimTree = true,
       },
     }
+
+    vim.keymap.set("n", "<leader>bcc", "<cmd>BufferClose<CR>")
+    vim.keymap.set("n", "<leader>bca", "<cmd>BufferCloseAllButCurrent<CR>")
+    vim.keymap.set("n", "<leader>bcr", "<cmd>BufferCloseBuffersRight<CR>")
+    vim.keymap.set("n", "<leader>bcl", "<cmd>BufferCloseBuffersLeft<CR>")
   end,
 }

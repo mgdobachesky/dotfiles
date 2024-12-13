@@ -15,12 +15,44 @@ return {
         {
           type = "pwa-node",
           request = "launch",
-          name = "Launch Workspace With Yarn (pwa-node)",
+          name = "Launch Yarn Start Debugger ",
           cwd = "${workspaceFolder}",
           sourceMaps = true,
           runtimeExecutable = "yarn",
           runtimeArgs = {
             "start:dev"
+          },
+          resolveSourceMapLocations = {
+            "${workspaceFolder}/**",
+            "!**/node_modules/**",
+          },
+          console = "integratedTerminal",
+        },
+        {
+          type = "pwa-node",
+          request = "launch",
+          name = "Launch Yarn iOS Debugger ",
+          cwd = "${workspaceFolder}",
+          sourceMaps = true,
+          runtimeExecutable = "yarn",
+          runtimeArgs = {
+            "ios"
+          },
+          resolveSourceMapLocations = {
+            "${workspaceFolder}/**",
+            "!**/node_modules/**",
+          },
+          console = "integratedTerminal",
+        },
+        {
+          type = "pwa-node",
+          request = "launch",
+          name = "Launch Yarn Android Debugger ",
+          cwd = "${workspaceFolder}",
+          sourceMaps = true,
+          runtimeExecutable = "yarn",
+          runtimeArgs = {
+            "android"
           },
           resolveSourceMapLocations = {
             "${workspaceFolder}/**",
