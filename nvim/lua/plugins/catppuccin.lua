@@ -13,6 +13,7 @@ return {
         aerial = true,
         alpha = true,
         cmp = true,
+        treesitter_context = true,
         diffview = true,
         mason = true,
         barbar = true,
@@ -51,6 +52,10 @@ return {
             enabled = true,
             scope_color = "",
             colored_indent_levels = false,
+          },
+          illuminate = {
+            enabled = true,
+            lsp = false
           },
         },
       }
