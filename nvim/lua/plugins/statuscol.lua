@@ -10,7 +10,11 @@ return {
           click = "v:lua.ScFa"
         },
         {
-          sign = { name = { ".*" }, maxwidth = 2, auto = true },
+          sign = { namespace = { "diagnostic/signs" }, maxwidth = 1, auto = true },
+          click = "v:lua.ScSa"
+        },
+        {
+          sign = { name = { ".*" }, maxwidth = 1, auto = true },
           click = "v:lua.ScSa"
         },
         {
