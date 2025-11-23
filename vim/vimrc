@@ -7,6 +7,7 @@ set showcmd " Show incomplete commands at the bottom
 set showmode " Show mode at the bottom
 set autoread " Re-read unmodified files
 set hidden " Remember marks and undo history when re-activating background buffer
+set mouse=a " Enable all mouse support
 
 " User Interface
 set ruler " Always show cursor position
