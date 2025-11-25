@@ -7,7 +7,7 @@ set showcmd " Show incomplete commands at the bottom
 set showmode " Show mode at the bottom
 set autoread " Re-read unmodified files
 set hidden " Remember marks and undo history when re-activating background buffer
-set mouse=a " Enable all mouse support
+set mouse=nvi " Enable all mouse support
 
 " User Interface
 set ruler " Always show cursor position
@@ -32,7 +32,7 @@ set undodir=$HOME/.vim/undodir// " Set undo file directory
 
 " Indentation
 set autoindent " Enable auto indenting
-filetype indent on " Enable indenting for files
+filetype indent on " Enable filetype detection and indentation for file types
 set tabstop=4 " Show existing tab with N spaces width
 set softtabstop=2 " Indent by N spaces when hitting tab
 set shiftwidth=2 " Indent by N spaces when auto-indenting
